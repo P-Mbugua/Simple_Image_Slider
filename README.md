@@ -13,4 +13,4 @@ This is a simple and interactive image slider built using HTML, CSS, and JavaScr
 ## Installation
 1. Clone the repository or download the files:
    ```bash
-   git clone https://github.com/your-username/image-slider.git
+   git clone https://github.com/P-Mbugua/Simple_Image_Slider
