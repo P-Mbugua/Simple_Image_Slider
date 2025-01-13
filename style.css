@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e5e7eb; /* gray-200 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 1rem;
+}
+
+.slider-container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* white */
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+.slide {
+  min-width: 100%;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.caption h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #34d399; /* green-500 */
+}
+
+.caption p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fbbf24; /* yellow-500 */
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.indicators {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.indicators {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 5px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #34d399; /* green-500 */
+}
+
+.dot:hover {
+  transform: scale(1.2);
+}
+
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280; /* gray-500 */
+}
+
+footer a {
+  color: #34d399; /* green-500 */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .slide img {
+    max-height: 300px;
+  }
+
+  .caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .caption p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
